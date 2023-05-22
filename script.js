@@ -10,7 +10,7 @@ const sendDoc = (email, text) => {
     To : email,
     From : "ryutaro.iwakami@autify.com",
     Subject : "資料請求",
-    Body : text,
+    Body : text
   }).then(
     message => alert(message)
   );
