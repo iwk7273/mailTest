@@ -21,7 +21,7 @@ btn.addEventListener('click', function() {
   const corp_name = document.getElementById("corp_name").value
   const name = document.getElementById("name").value
 
-  const text = 'これはテストです'
+  const text = 'これはテストです<br>'
   console.log("mail sent")
   sendDoc(email,text)
 }, false)
