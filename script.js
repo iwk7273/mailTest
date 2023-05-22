@@ -1,9 +1,6 @@
 // script.js
 const sendDoc = (email, text) => {
   Email.send({
-//    Host : "smtp.elasticemail.com",
-//    Username : "ryutaro.iwakami@autify.com",
-//    Password : "640DFDA464F403974FA75432986BB5C8AE72",
     SecureToken: "3ED7A7EF69D0D7F754502C310767C4734623",
     To : email,
     From : "ryutaro.iwakami@autify.com",
@@ -20,8 +17,8 @@ btn.addEventListener('click', function() {
   const email = document.getElementById("email").value
   const corp_name = document.getElementById("corp_name").value
   const name = document.getElementById("name").value
-
-  const text = 'これはテストです<br>'
+  const text = 'これはテストです。'
+  
   console.log("mail sent")
   sendDoc(email,text)
 }, false)
