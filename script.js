@@ -22,11 +22,12 @@ btn.addEventListener('click', function() {
   const email = document.getElementById("email").value
   const corp_name = document.getElementById("corp_name").value
   const name = document.getElementById("name").value
-  const text = "これはテストです。"
+  const text = "sample<br>"
   
   console.log(email)
   console.log(corp_name)
   console.log(name)
+  console.log(text)
   
   sendDoc(email,text)
 }, false)
