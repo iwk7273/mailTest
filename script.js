@@ -22,7 +22,7 @@ btn.addEventListener('click', function() {
   const email = document.getElementById("email").value
   const corp_name = document.getElementById("corp_name").value
   const name = document.getElementById("name").value
-  const text = "sample<br>"
+  const text = corp_name + '　' +  name + '様<br>'
   
   console.log(email)
   console.log(corp_name)
