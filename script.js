@@ -16,10 +16,6 @@ const sendDoc = (email, text) => {
 const btn = document.getElementById('send_Doc');
 
 btn.addEventListener('click', function() {
-  sendDoc(email,text)
-}, false)
-
-btn.addEventListener('click', function() {
   const email = document.getElementById("email").value
   const corp_name = document.getElementById("corp_name").value
   const name = document.getElementById("name").value
@@ -30,6 +26,6 @@ btn.addEventListener('click', function() {
              + '　株式会社〇〇<br>'
              + '　〒100-0001　東京都千代田区千代田1-1<br>'
              + '========================'
-
+  console.log("mail sent")
   sendDoc(email,text)
 }, false)
