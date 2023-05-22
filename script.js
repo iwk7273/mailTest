@@ -1,9 +1,10 @@
 // script.js
 const sendDoc = (email, text) => {
   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "ryutaro.iwakami@autify.com",
-    Password : "AC816398BB07C05350D1381F24AD95B73228",
+//    Host : "smtp.elasticemail.com",
+//    Username : "ryutaro.iwakami@autify.com",
+//    Password : "AC816398BB07C05350D1381F24AD95B73228",
+    SecureToken: "2866D913A74BCDAB8F9491BF7A0400C99753",
     To : email,
     From : "ryutaro.iwakami@autify.com",
     Subject : "資料請求",
