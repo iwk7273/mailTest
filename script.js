@@ -1,11 +1,12 @@
 // script.js
 //SecureToken :  "3ED7A7EF69D0D7F754502C310767C4734623",
+//Host : "smtp.elasticemail.com",
+//Username : "ryutaro.iwakami@autify.com",
+//Password : "A3F34EFF51037A81BCB8DF9017F985843BA2",   
 
 const sendDoc = (email, text) => {
   Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "ryutaro.iwakami@autify.com",
-    Password : "A3F34EFF51037A81BCB8DF9017F985843BA2",    
+    SecureToken :  "3ED7A7EF69D0D7F754502C310767C4734623",   
     To : email,
     From : "ryutaro.iwakami@autify.com",
     Subject : "資料請求",
