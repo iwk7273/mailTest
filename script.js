@@ -6,7 +6,7 @@
 
 const sendDoc = (email, text) => {
   Email.send({
-    SecureToken :  "aaaaaaa",   
+    SecureToken : "748A5A9D774BDB70D0E81BDF39EABBA5CCF8616B8425C5257702452E3079985ABB998B52F858896A235306D6A8E9E295",   
     To : email,
     From : "ryutaro.iwakami@autify.com",
     Subject : "資料請求",
@@ -27,7 +27,6 @@ btn.addEventListener('click', function() {
   console.log(corp_name)
   console.log(name)
   console.log(email)
-  console.log(text)
   
   sendDoc(email,text)
 }, false)
