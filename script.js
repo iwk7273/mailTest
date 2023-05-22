@@ -24,9 +24,9 @@ btn.addEventListener('click', function() {
   const name = document.getElementById("name").value
   const text = corp_name + '　' +  name + '様<br>'
   
-  console.log(email)
   console.log(corp_name)
   console.log(name)
+  console.log(email)
   console.log(text)
   
   sendDoc(email,text)
