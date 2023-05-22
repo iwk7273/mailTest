@@ -23,6 +23,5 @@ btn.addEventListener('click', function() {
   console.log(corp_name)
   console.log(name)
   
-  console.log("mail sent")
   sendDoc(email,text)
 }, false)
