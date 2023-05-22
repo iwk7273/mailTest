@@ -3,7 +3,7 @@
 
 const sendDoc = (email, text) => {
   Email.send({
-    SecureToken : "85ec2a42-4d88-4a6c-abfe-53f3f795b69e",
+    SecureToken : "050A4F73A2A5109D34DCB77BFA1E01545312A4B13F334A898B2D86130B8DD0330FB51FB72AD2A68E31F13A552C356495",
     To : email,
     From : "ryutaro.iwakami@autify.com",
     Subject : "資料請求",
