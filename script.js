@@ -1,6 +1,4 @@
 // script.js
-
-
 const sendDoc = (email, text) => {
   Email.send({
     Host : "smtp.elasticemail.com",
@@ -23,11 +21,6 @@ btn.addEventListener('click', function() {
   const name = document.getElementById("name").value
 
   const text = corp_name + '　' +  name + '様<br>'
-             + '資料請求ありがとうございます。<br><br><br>'
-             + '========================<br>'
-             + '　株式会社〇〇<br>'
-             + '　〒100-0001　東京都千代田区千代田1-1<br>'
-             + '========================'
   console.log("mail sent")
   sendDoc(email,text)
 }, false)
