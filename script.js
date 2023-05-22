@@ -1,15 +1,35 @@
 // script.js
 
-const sendDoc = () => {
+
+const sendDoc = (email, text) => {
   Email.send({
-    Host : "smtp.yourisp.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    SecureToken : "85ec2a42-4d88-4a6c-abfe-53f3f795b69e",
+    To : email,
+    From : "ryutaro.iwakami@autify.com",
+    Subject : "資料請求",
+    Body : text,
   }).then(
     message => alert(message)
   );
 }
+
+const btn = document.getElementById('send_Doc');
+
+btn.addEventListener('click', function() {
+  sendDoc(email,text)
+}, false)
+
+btn.addEventListener('click', function() {
+  const email = document.getElementById("email").value
+  const corp_name = document.getElementById("corp_name").value
+  const name = document.getElementById("name").value
+
+  const text = corp_name + '　' +  name + '様<br>'
+             + '資料請求ありがとうございます。<br><br><br>'
+             + '========================<br>'
+             + '　株式会社〇〇<br>'
+             + '　〒100-0001　東京都千代田区千代田1-1<br>'
+             + '========================'
+
+  sendDoc(email,text)
+}, false)
