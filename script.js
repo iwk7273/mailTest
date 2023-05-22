@@ -4,7 +4,7 @@ const sendDoc = (email, text) => {
 //    Host : "smtp.elasticemail.com",
 //    Username : "ryutaro.iwakami@autify.com",
 //    Password : "640DFDA464F403974FA75432986BB5C8AE72",
-    SecureToken: "640DFDA464F403974FA75432986BB5C8AE72",
+    SecureToken: "3ED7A7EF69D0D7F754502C310767C4734623",
     To : email,
     From : "ryutaro.iwakami@autify.com",
     Subject : "資料請求",
