@@ -25,3 +25,20 @@ btn.addEventListener('click', function() {
   
   sendDoc(email,text)
 }, false)
+
+
+Notification.requestPermission().then((permission) => { 
+    switch (permission) { 
+      case 'granted': 
+        // 許可された場合の処理
+        break; 
+      case 'denied': 
+        // 拒否された場合の処理 
+        break; 
+      case 'default': 
+        // 無視された場合の処理
+        break; 
+      default: 
+        break; 
+    } 
+});
