@@ -11,24 +11,26 @@
 </head>
 <body>
   <h1>メールテスト</h1>
-  <div class="form-group">
-    <label for="corp_name">会社名</label>
-    <input type="text" name="corp_name" id="corp_name" placeholder="例）株式会社〇〇">
-  </div>
-  <div class="form-group">
-    <label for="full_name">氏名</label>
-    <input type="text" name="name" id="name" placeholder="例）鈴木太郎">
-  </div>
-  <div class="form-group">
-    <label for="email">メールアドレス<span class="badge">必須</span></label>
-    <input type="text" name="email" id="email" placeholder="例）〇〇〇@email.com">
-    <div class="alert-msg hidden" id="email_msg">メールアドレスを入力してください</div>
-  </div>
-  <div class="form-group-bottun">
-    <button type="submit" class="button" id="send_Doc">
-      送信
-    </button>
-  </div>
+  <form>
+    <div class="form-group">
+      <label for="corp_name">会社名</label>
+      <input type="text" name="corp_name" id="corp_name" placeholder="例）株式会社〇〇">
+    </div>
+    <div class="form-group">
+      <label for="full_name">氏名</label>
+      <input type="text" name="name" id="name" placeholder="例）鈴木太郎">
+    </div>
+    <div class="form-group">
+      <label for="email">メールアドレス<span class="badge">必須</span></label>
+      <input type="text" name="email" id="email" placeholder="例）〇〇〇@email.com">
+      <div class="alert-msg hidden" id="email_msg">メールアドレスを入力してください</div>
+    </div>
+    <div class="form-group-bottun">
+      <button type="submit" class="button" id="send_Doc">
+        送信
+      </button>
+    </div>
+  </form>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./script.js"></script>  
 </body>
